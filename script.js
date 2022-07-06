@@ -33,7 +33,7 @@ const handleCardRender = (event) => {
 const handleSearch = (event) => {
     console.log(searchBarText.value)
     pokemonArray.forEach(pokemon => {
-        if (searchBarText.value == pokemon.name) {
+        if (searchBarText.value.toLowerCase() == pokemon.name.toLowerCase()) {
           if (pokemon.types[1] !== undefined) {
             cardContainer.innerHTML = `<card class="card">
         <img src="${pokemon.sprite}" alt="" class="card__image">
