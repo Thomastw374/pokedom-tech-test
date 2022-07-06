@@ -2,7 +2,7 @@ import {pokemonArray} from './data/pokemon.js'
 const cardContainer = document.querySelector(".card-container")
 const searchBarText = document.querySelector("#search-bar")
 const searchBarButton = document.querySelector("#search-button");
-const resultNumberDropdown = document.querySelector("#results-dropdown");
+// const resultNumberDropdown = document.querySelector("#results-dropdown");
 
 // function showNoOfResults(number) {
 //     for(let i=0; i<number; i++) {
@@ -80,7 +80,6 @@ const handleSearch = (event) => {
 // const handleResultNumber = (event) => {
 //     showNoOfResults(resultNumberDropdown.value)
 // }
-
 
 handleCardRender()
 searchBarButton.addEventListener("click", handleSearch)
